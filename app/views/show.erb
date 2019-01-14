@@ -2,5 +2,5 @@
 <h3> Content: <%= @article.content %> </h3>
 <form action="/posts/<%= @article.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="delete">
+  <input type="submit" value="delete" id="delete">
 </form>
