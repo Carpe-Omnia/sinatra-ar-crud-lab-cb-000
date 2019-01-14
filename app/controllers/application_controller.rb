@@ -16,4 +16,5 @@ class ApplicationController < Sinatra::Base
   end
   post 'articles' do
     chad = Article.create(title: params["title"], content: params["content"])
+    erb :index
 end
