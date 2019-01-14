@@ -19,12 +19,12 @@ class ApplicationController < Sinatra::Base
   post '/posts' do
     chad = Post.create(title: params["title"], content: params["content"])
     @articles = Post.all
-    erb :index
+    erb :posts
   end
 
   get '/posts' do
     @articles = Post.all
-    erb :index
+    erb :posts
   end
 
   get 'posts/:id' do
