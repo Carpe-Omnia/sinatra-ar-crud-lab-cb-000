@@ -47,7 +47,7 @@ class ApplicationController < Sinatra::Base
     article = Post.find(params[:id])
     article.delete
     @articles = Post.all
-    erb :index
+    erb :posts
   end
 
 end
