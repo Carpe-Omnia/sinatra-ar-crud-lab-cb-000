@@ -36,4 +36,7 @@ class ApplicationController < Sinatra::Base
     article.update(title: params["title"], content: params["content"])
     erb :index
   end
+
+
+  
 end
