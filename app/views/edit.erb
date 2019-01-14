@@ -1,3 +1,5 @@
+<p> <%= @article.name %> </p>
+<p> <%= @article.content %> </p>
 <form action="posts/<%= @article.id %>" method="post">
   Name:<input type="text" name="title" >
   Content:<input type="text" name="content" >
