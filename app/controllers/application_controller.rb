@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
   patch '/posts/:id' do
     article = Post.find(params[:id])
     article.update(name: params["name"], content: params["content"])
-    erb :index
+    erb :posts
   end
 
   delete '/posts/:id' do
